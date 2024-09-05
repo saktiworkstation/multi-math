@@ -30,4 +30,9 @@ class GeometriController extends Controller
     {
         return 2 * pi() * $r;
     }
+
+    public function vkelilingLingkaran()
+    {
+        return view('geometri.keliling-lingkaran');
+    }
 }

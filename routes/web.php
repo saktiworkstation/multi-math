@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GeometriController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
+});
+
+Route::controller(GeometriController::class)->group(function () {
+    Route::get('/geometri/keliling-lingkaran', 'vkelilingLingkaran');
 });
