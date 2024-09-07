@@ -20,4 +20,5 @@ Route::get('/', function () {
 
 Route::controller(GeometriController::class)->group(function () {
     Route::get('/geometri/keliling-lingkaran', 'vkelilingLingkaran');
+    Route::get('/geometri/luas-lingkaran', 'vluasLingkaran');
 });

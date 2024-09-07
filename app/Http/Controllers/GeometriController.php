@@ -26,6 +26,11 @@ class GeometriController extends Controller
         return pi() * pow($r, 2);
     }
 
+    public function vluasLingkaran()
+    {
+        return view('geometri.luas-lingkaran');
+    }
+
     public function kelilingLingkaran($r)
     {
         return 2 * pi() * $r;
